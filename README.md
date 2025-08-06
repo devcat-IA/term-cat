@@ -1,26 +1,33 @@
 # 🐱 term-cat
 
-Uma versão simples e colorida do comando `cat`, com opção de numerar linhas.
+A simple and colorful version of the `cat` command, with optional line numbering.
 
-## 💻 Uso
+---
+
+## 💻 Usage
 
 ```bash
-./term-cat [-n] arquivo
+./term-cat [-n] <file>
 
-    -n: numera as linhas
+    -n: display line numbers
 
-🧪 Exemplo
+🧪 Example
 
-./term-cat -n exemplo.txt
+./term-cat -n example.txt
 
-🔧 Compilação
+🔧 Compilation
+
+Use make to compile the project:
 
 make
 
-📁 Estrutura
+This will create the term-cat executable.
+📁 Project Structure
 
-    src/: código fonte
-
-    include/: headers
-
-    Makefile: compilação
+term-cat/
+├── Makefile        # Build system
+├── README.md       # Project documentation
+├── src/            # Source code
+│   └── term_cat.c
+└── include/        # Header files
+    └── term_cat.h
