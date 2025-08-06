@@ -5,8 +5,8 @@
 
 void	print_usage(void)
 {
-	printf("Uso: ./term-cat [-n] arquivo\n");
-	printf("  -n : numerar linhas\n");
+	printf("Usage: ./term-cat [-n] <file>\n");
+	printf("  -n : display line numbers\n");
 }
 
 void	print_file(FILE *file, int number_lines)
@@ -47,7 +47,7 @@ int	main(int argc, char **argv)
 	file = fopen(filename, "r");
 	if (!file)
 	{
-		perror("Erro ao abrir o arquivo");
+		perror("Error opening file");
 		return (1);
 	}
 	print_file(file, number_lines);
